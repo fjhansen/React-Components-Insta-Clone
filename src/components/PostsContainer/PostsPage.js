@@ -6,10 +6,6 @@ import "./Posts.css";
 // import data 
 import dummyData from '../../dummy-data';
 
-
-
-
-
 // state
 const PostsPage = () => {
  const [data] = useState(dummyData);
@@ -19,15 +15,10 @@ const PostsPage = () => {
       {data.map((a, b)=>
       <Post post={a} key={b}/>
       )}
-
-
     </div>
     
   )
   }
-
-  
-  
 
 
 export default PostsPage;
